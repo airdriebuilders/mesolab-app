@@ -1,4 +1,5 @@
 {
   "forceUpdate": { "ios": true, "android": true },
-  "min_version_code_android": 43
+  "min_version_code_android": 43,
+  "min_build_ios": 43
 }
