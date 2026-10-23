@@ -1,30 +1,31 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
-    <script type="module" crossorigin src="/mesolab-app/assets/polyfills-B0eSvtDo.js"></script>
+    <script type="module" crossorigin src="/mesolab-app/assets/polyfills-K73Tahbo.js"></script>
 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/mesolab-app/favicon.svg" />
     <link rel="manifest" href="/mesolab-app/manifest.webmanifest" />
     <link rel="apple-touch-icon" href="/mesolab-app/apple-touch-icon.png" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="MesoLab" />
+    <meta name="apple-mobile-web-app-title" content="Meso Gym" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>MesoLab – hypertrophy training</title>
-    <meta name="theme-color" content="#0f1218" />
+    <title>Meso Gym – hypertrophy training</title>
+    <meta name="theme-color" content="#05070d" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <script type="module" crossorigin src="/mesolab-app/assets/index-BsyoKWcP.js"></script>
-    <link rel="stylesheet" crossorigin href="/mesolab-app/assets/index-CovDm8bQ.css">
+    <script type="module" crossorigin src="/mesolab-app/assets/index-D9Mayzd8.js"></script>
+    <link rel="modulepreload" crossorigin href="/mesolab-app/assets/preload-helper-COQ1Ih9H.js">
+    <link rel="stylesheet" crossorigin href="/mesolab-app/assets/index-I8dbWCcG.css">
   </head>
   <body>
-    <div id="root"><div id="boot" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#0f1218;color:#e8ecf4;font-family:system-ui,sans-serif;text-align:center;padding:2rem"><p id="boot-msg" style="margin:0;font-size:1.1rem">Loading…</p><button id="boot-retry" type="button" onclick="location.reload()" style="display:none;padding:0.7rem 1.4rem;border-radius:10px;border:0;background:#ff7a45;color:#111;font-weight:700;font-size:1rem">Retry</button></div></div>
+    <div id="root"><div id="boot" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:#05070d;color:#e8ecf4;font-family:system-ui,sans-serif;text-align:center;padding:2rem"><p id="boot-msg" style="margin:0;font-size:1.1rem">Loading…</p><button id="boot-retry" type="button" onclick="location.reload()" style="display:none;padding:0.7rem 1.4rem;border-radius:10px;border:0;background:#1f63e6;color:#fff;font-weight:700;font-size:1rem">Retry</button></div></div>
     <script>
       // Plain ES5 safety net: if the app hasn't started after 15 s, offer Retry instead of a blank screen.
       setTimeout(function () {
         if (window.__mesolabBooted) return;
         var m = document.getElementById('boot-msg'), b = document.getElementById('boot-retry');
-        if (m) m.textContent = 'MesoLab is taking too long to start.';
+        if (m) m.textContent = 'Meso Gym is taking too long to start.';
         if (b) b.style.display = 'block';
       }, 15000);
       setTimeout(function () { var b = document.getElementById('boot-retry'); if (b && !window.__mesolabBooted) b.style.display = 'block'; }, 5000);
