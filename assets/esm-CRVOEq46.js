@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-Dmrvvx6g.js","assets/dist-jLYWJU79.js","assets/react-DB-4Zxce.js"])))=>i.map(i=>d[i]);
+import{s as e}from"./dist-jLYWJU79.js";import{t}from"./preload-helper-COQ1Ih9H.js";var n=e(`Preferences`,{web:()=>t(()=>import(`./web-Dmrvvx6g.js`).then(e=>new e.PreferencesWeb),__vite__mapDeps([0,1,2]))});export{n as Preferences};
